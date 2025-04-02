@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    
+   
     <link rel="stylesheet" href="style.css">
     <title>Login Form</title>
 </head>
@@ -10,17 +13,24 @@
     <main>
     <div class="form">
         <div class="form_header">
-            <h3>Login Form </h3><p>Individual Logins</p>
-        </div>
+            <h3>Login Form | </h3>
+            <p>Individual Logins</p>
+        <div class="login-form">
         <form>
             <label for="username">Enter Your Email / Username</label>
-            <input type="text" id="username" name="username"  placeholder="Email / Username..." required/>
+            <input type="text" id="username" name="username"  placeholder="Email / Username..." aria-label="Enter Your Email / Username" required/></br>
             <label for="password">Enter Your Password</label>
-            <input type="password" id="password" name="password" placeholder="Password..." required/>
-            <button type="submit">Submit</button>
-            <a href="#">Forgot Password? </a>
+            <input type="password" id="password" name="password" placeholder="Password..." aria-label="Enter Your password" required/>
+            <div class="form-actions">
+                <button type="submit">Submit</button>
+            </div>
+            <div class="reset">
+                <a href="#">Forgot Password? </a>
+            </div>
+           
         </form>
-    </div>
+        </div>
+    </div> 
     </main>
 </body>
 </html>
