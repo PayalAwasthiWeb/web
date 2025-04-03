@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/register.css">
     <title>Registration Form</title>
 </head>
 <body>
     <main>
-        <div class="col-sm-12 form">
+        <div class="form">
             <div class="form-header">
                 <h2>Get First Interaction With Us |</h2>
                 <p>Connect Us</p>
             </div>
             <div class="form-body">
+                <form action="#">
                 <label for="firstname">First Name</label>
                 <input type="text" id="firstname" name="firstname" placeholder="First Name..." aria-lebel="Enter Your First Name" required>
                 <label for="lastname">Last Name</label>
@@ -21,8 +24,8 @@
                 <input type="username" id="username" name="username" placeholder="Username..." aria-label="Enter Your Username" required/></br>
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" placeholder="Password..." aria-label="Enter Your Password" required/></br>
-                <button>Submit</button>
-
+                <button type="submit">Submit</button>
+                </form>
             </div>
         </div>
     </main>
