@@ -1,94 +1,102 @@
-/* General styles */
+/* General Reset */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background color */
+}
+
+/* Center the form on the page */
+main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Full viewport height */
 }
 
-/* Login form container */
-.login-form {
-    background-color: #ffffff;
-    padding: 40px 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 400px;
+/* Form Container */
+.form {
+    background-color: #ffffff; /* White background for the form */
+    padding: 20px 30px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 500px; /* Restrict form width */
+    width: 100%; /* Full width for smaller screens */
 }
 
-/* Form heading */
-.form_header{
-    align-content:center;
-    display:flex;
-    margin-bottom: 20px;  
-}
-.form_header h2 {
-    font-weight: bold;
-    font-size: 24px;
-    color: #333333;
-    text-align: center;
-    margin:0;
+/* Form Header */
+.header-content {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Aligns items vertically in the center */
+    gap: 10px; /* Adds spacing between the heading and paragraph */
+    margin-bottom: 35px; /* Adds spacing below the header */
+    margin-top: 10px; /* Adds spacing above the header */
 }
 
-.form_header p{
-    padding-top: 5px;
-    margin-bottom:0;
-    margin-left: 5px;
+.header-content h2 {
+    margin: 0; /* Removes default margin for better alignment */
+    font-size: 24px; /* Adjust font size for the heading */
+    color: #333; /* Darker text color */
 }
 
-/* Input fields */
-.login-form input[type="text"],
-.login-form input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    margin-bottom: 10px;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+.header-content p {
+    margin: 0; /* Removes default margin for better alignment */
+    font-size: 16px; /* Adjust font size for the paragraph */
+    color: #666; /* Lighter text color */
 }
 
-/* Submit button */
-.login-form button {
-    width: 50%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin:10px;
+/* Form Body */
+.form-body label {
+    display: block; /* Ensure labels are on their own line */
+    margin-bottom: 5px; /* Add spacing below labels */
+    font-size: 14px; /* Label font size */
+    color: #333; /* Darker text color */
 }
 
-.login-form button:hover {
-    background-color: #0056b3;
+.form-body input {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Add padding inside inputs */
+    margin-bottom: 15px; /* Add spacing below inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px; /* Input font size */
+    box-sizing: border-box; /* Include padding in width */
 }
 
-/* Additional styles */
-.login-form .forgot-password {
-    display: block;
-    margin-top: 10px;
-    text-align: center;
-    color: #007bff;
-    text-decoration: none;
-    font-size: 14px;
+.form-body input:focus {
+    border-color: #007bff; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); /* Add subtle shadow */
 }
 
-.login-form .form-actions{
-    text-align: center;
-    margin:10px 0;
+/* Submit Button */
+button[type="submit"] {
+    width: 100%; /* Full width for the button */
+    padding: 10px 15px; /* Add padding inside the button */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #ffffff; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Button font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
-.login-form .reset{
-    text-align: center;
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
-.login-form .forgot-password:hover {
-    text-decoration: underline;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form {
+        padding: 15px 20px; /* Reduce padding on smaller screens */
+    }
+
+    .form-header h2 {
+        font-size: 20px; /* Smaller font size for the heading */
+    }
+
+    .form-header p {
+        font-size: 14px; /* Smaller font size for the subheading */
+    }
 }
