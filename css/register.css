@@ -3,46 +3,51 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9; /* Light background color */
-}
-
-/* Center the form on the page */
-main {
+    background-color: #f4f4f9;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Full viewport height */
+    height: 100vh;
+}
+
+.form{
+    max-width: 900px;
 }
 
 /* Form Container */
-.form {
+.form-body {
     background-color: #ffffff; /* White background for the form */
-    padding: 20px 30px;
+    padding: 40px 40px;
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     max-width: 500px; /* Restrict form width */
     width: 100%; /* Full width for smaller screens */
+    max-width: 900px;
 }
+
+
 
 /* Form Header */
-.header-content {
-    display: flex; /* Enables flexbox layout */
-    align-items: center; /* Aligns items vertically in the center */
-    gap: 10px; /* Adds spacing between the heading and paragraph */
-    margin-bottom: 35px; /* Adds spacing below the header */
-    margin-top: 10px; /* Adds spacing above the header */
+.form-header{
+    align-content:center;
+    display:flex;
+    margin-bottom: 20px;  
 }
 
-.header-content h2 {
+
+.form-header h2 {
     margin: 0; /* Removes default margin for better alignment */
     font-size: 24px; /* Adjust font size for the heading */
     color: #333; /* Darker text color */
+    font-weight: bold;
 }
 
-.header-content p {
+.form-header p {
     margin: 0; /* Removes default margin for better alignment */
     font-size: 16px; /* Adjust font size for the paragraph */
-    color: #666; /* Lighter text color */
+    color: #0000ff; /* Lighter text color */
+    padding-top: 5px;
+    margin-left: 5px;;
 }
 
 /* Form Body */

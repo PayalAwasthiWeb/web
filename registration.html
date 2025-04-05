@@ -4,27 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/register.css">
     <title>Registration Form</title>
 </head>
 <body>
     <main>
-        <div class="form">
+        <div class="form col-sm-12">
             <div class="form-header">
-                <div class="header-content">
                   <h2>Get First Interaction With Us |</h2>
                   <p>Connect Us</p>
-                </div>
             </div>
             <div class="form-body">
                 <form action="#">
-                <label for="firstname">First Name</label>
+                <label for="firstname"><i class="fa-solid fa-user"></i> First Name</label>
                 <input type="text" id="firstname" name="firstname" placeholder="First Name..." aria-lebel="Enter Your First Name" required>
-                <label for="lastname">Last Name</label>
+                <label for="lastname"><i class="fa-solid fa-user"></i> Last Name</label>
                 <input type="text" id="lastname" name="lastname" placeholder="Last Name..." aria-lebel="Enter Your Last Name" required>
-                <label for = "username">Username or Email</label>
+                <label for = "username"><i class="fa-solid fa-envelope"></i> Username or Email</label>
                 <input type="username" id="username" name="username" placeholder="Username..." aria-label="Enter Your Username" required/></br>
-                <label for="password">Password</label>
+                <label for="password"><i class="fa-solid fa-key"></i> Password</label>
                 <input type="password" id="password" name="password" placeholder="Password..." aria-label="Enter Your Password" required/></br>
                 <button type="submit">Submit</button>
                 </form>
